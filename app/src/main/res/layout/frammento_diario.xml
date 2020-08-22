@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/more"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.agenda.diario.CustomView.CustomViewPager
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/paperDiario"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true">
+
+  </com.agenda.diario.CustomView.CustomViewPager>
+
+<com.getbase.floatingactionbutton.AddFloatingActionButton
+    android:id="@+id/fab1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp"
+    fab:fab_colorNormal="@color/bar_diario"
+    fab:fab_colorPressed="@color/tolbar_diario"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_canc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/ic_delete_white_24dp"
+        fab:fab_colorNormal="@color/fab_canc"
+        fab:fab_colorPressed="@color/fab_canc_press"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    </RelativeLayout>

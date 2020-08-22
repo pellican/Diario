@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fonts" translatable="false">
+
+        <item>font/f1.ttf</item>
+        <item>font/f2.ttf</item>
+        <item>font/f3.ttf</item>
+        <item>font/f4.ttf</item>
+        <item>font/f5.ttf</item>
+        <item>font/f6.ttf</item>
+        <item>font/f7.ttf</item>
+        <item>font/f8.ttf</item>
+        <item>font/f9.ttf</item>
+        <item>font/f10.ttf</item>
+        <item>font/f11.ttf</item>
+    </string-array>
+    <string-array name="categor" translatable="false">
+        <item>@string/altro</item>
+        <item>@string/famiglia</item>
+        <item>@string/amici</item>
+        <item>@string/studio</item>
+        <item>@string/amore</item>
+        <item>@string/lavoro</item>
+        <item>@string/attivita</item>
+        <item>@string/hobby</item>
+        <item>@string/idee</item>
+        <item>@string/vacanza</item>
+        <item>@string/festa</item>
+    </string-array>
+    <string-array name="listbackup" translatable="false">
+        <item>@string/giornalmente</item>
+        <item>@string/settimanalmente</item>
+        <item>@string/mensilmente</item>
+    </string-array>
+    <string-array name="numbackup" translatable="false" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lato">135dp</dimen>
+    <dimen name="alt">80dp</dimen>
+    <dimen name="slidewidth">300dp</dimen>
+    <dimen name="slideheigt">450dp</dimen>
+    <dimen name="slidetext">30sp</dimen>
+    <dimen name="slideclaud">250dp</dimen>
+</resources>

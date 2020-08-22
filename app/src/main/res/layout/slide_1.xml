@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_diario_list">
+    <ImageView
+        android:id="@+id/imapp"
+        android:layout_width="@dimen/slidewidth"
+        android:layout_height="@dimen/slideheigt"
+        android:src="@drawable/ic_launcher"
+
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/benvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imapp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/benvenuto_in_diario_agenda"/>
+
+
+
+
+</RelativeLayout>

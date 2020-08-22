@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawerRelative"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/libro"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RelativeCalendario"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/lato"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="Calendario"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="@dimen/alt"
+            android:rotation="-90">
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeDiario"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/lato"
+            android:layout_alignLeft="@+id/RelativeCalendario"
+            android:layout_alignStart="@+id/RelativeCalendario"
+            android:layout_below="@+id/RelativeCalendario"
+            android:onClick="Diario"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:rotation="-90">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeAgenda"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/lato"
+            android:layout_alignLeft="@+id/RelativeDiario"
+            android:layout_alignStart="@+id/RelativeDiario"
+            android:layout_below="@+id/RelativeDiario"
+            android:onClick="Agenda"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:rotation="-90">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeNote"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/lato"
+            android:layout_alignLeft="@+id/RelativeAgenda"
+            android:layout_alignStart="@+id/RelativeAgenda"
+            android:layout_below="@+id/RelativeAgenda"
+            android:onClick="Note"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:rotation="-90">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeInfo"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/lato"
+            android:layout_alignLeft="@+id/relativeNote"
+            android:layout_alignStart="@+id/relativeNote"
+            android:layout_below="@+id/relativeNote"
+            android:onClick="Impost"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:rotation="-90">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

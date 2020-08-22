@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+
+        >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="170dp"
+               >
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/angoli"
+
+                    android:hint="@string/scrivi_testo"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/vista_sett_text"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ombra"
+        android:visibility="invisible"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#fafafa">
+            <RelativeLayout
+                android:id="@+id/reldim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+                <TextView
+                    android:id="@+id/apiccola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                   />
+                <SeekBar
+                    android:id="@+id/seekbar_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@+id/agrande"
+                    android:layout_toStartOf="@+id/agrande"
+                    android:max="50"
+                    android:progress="20"/>
+                <TextView
+                    android:id="@+id/agrande"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="20"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/reltool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/reldim">
+
+                <ImageView
+                    android:id="@+id/imacolore"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp" />
+
+                <CheckBox
+                    android:id="@+id/checkcornice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/imacolore"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:checked="true"
+                    android:text="@string/cornice" />
+                <CheckBox
+                    android:id="@+id/checkgrasset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/imacolore"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:text="@string/grassetto" />
+                <CheckBox
+                    android:id="@+id/checkitalic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/imacolore"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:checked="false"
+                    android:text="Corsivo" />
+
+                <Spinner
+                    android:id="@+id/spinfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ombra"
+        android:id="@+id/view2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#e0f2f1">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVtexind"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_arrow_back" />
+            <ImageView
+                android:id="@+id/ima_taxt_sett"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/text_fields48"
+
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_done"
+                android:id="@+id/imageVtexok"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

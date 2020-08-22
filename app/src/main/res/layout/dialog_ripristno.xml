@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textscegli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scegli_il_backup_da_ripristinare"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/spinneripristno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textscegli"
+        android:layout_marginTop="30dp"
+        >
+
+    </Spinner>
+    <TextView
+        android:id="@+id/textannrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annulla"
+        android:textSize="18sp"
+        android:textColor="@color/text_blu"
+        android:layout_below="@+id/spinneripristno"
+        android:layout_margin="20dp"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/textokrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/text_blu"
+        android:textSize="18sp"
+        android:layout_below="@+id/spinneripristno"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:padding="15dp"/>
+    <FrameLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/spinneripristno"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
+</RelativeLayout>

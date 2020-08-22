@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_diario">
+<ImageView
+    android:id="@+id/imdislid"
+    android:layout_width="@dimen/slidewidth"
+    android:layout_height="@dimen/slideheigt"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/sfondo_diario"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imdislid"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/slidetext"
+        android:gravity="center"
+        android:text="@string/crea_il_tuo_diario_aggiungi_testo_foto_video_musica_disegno"/>
+</RelativeLayout>

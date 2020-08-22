@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/laytitag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a5d6a7"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titoloag"
+            android:text="@string/set_notifica"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+            android:id="@+id/textVdataAg"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/titoloag"
+            android:layout_toEndOf="@+id/titoloag"
+           android:layout_centerVertical="true"  />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textoraAg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:text="@string/ore"
+        android:layout_marginTop="122dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TimePicker
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:timePickerMode="spinner"
+        android:layout_below="@+id/laytitag"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+         />
+
+    <EditText
+    android:id="@+id/editTextdialage"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/timePicker"
+    android:hint="@string/scrivi_testo"
+    android:layout_centerHorizontal="true"
+    android:imeOptions="actionDone"
+    android:focusableInTouchMode="true"
+    android:inputType="text"
+    android:maxLines="5"
+
+    />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="10dp"
+    android:layout_below="@+id/editTextdialage"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/imageinag"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_arrow_back"
+        />
+    <ImageView
+        android:id="@+id/imagdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_delete"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/imageinag"
+        android:layout_toRightOf="@+id/imageinag"
+        android:layout_toEndOf="@+id/imageinag"
+        />
+
+    <ImageView
+        android:id="@+id/imagenot"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/ic_notif"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/imagdelete"
+        android:layout_toRightOf="@+id/imagdelete"
+        android:layout_toEndOf="@+id/imagdelete"
+        />
+
+    <ImageView
+        android:id="@+id/imageconfeag"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_done_blu"
+        android:layout_alignTop="@+id/imagenot"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/imagenot"
+        android:layout_toEndOf="@+id/imagenot"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

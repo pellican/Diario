@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- fab -->
+    <color name="text_color">#b9000000</color>
+    <color name="fab_canc">#f44336</color>
+    <color name="fab_canc_press">#d13a2e</color>
+
+    <!--diario list-->
+    <color name="tolbar_diario_list">#aea46f</color>
+    <color name="bar_diario_list">#e2d38c</color>
+
+    <!--diario-->
+    <color name="tolbar_diario">#c9b384</color>
+    <color name="bar_diario">#e2cda1</color>
+
+    <!--agenda-->
+    <color name="tolbar_agenda">#7d9b7e</color>
+    <color name="bar_agenda">#a5d6a7</color>
+
+    <!--calendario-->
+    <color name="tolbar_calendario">#c1a6a9</color>
+    <color name="bar_calendario">#ffcdd2</color>
+
+    <!--note-->
+    <color name="tolbar_note">#80cbc4</color>
+    <color name="bar_note">#a7ffeb</color>
+
+    <!--inpostazioni-->
+    <color name="tolbar_impost">#9d84a1</color>
+    <color name="bar_impost">#e1bee7</color>
+
+    <!--crouton-->
+    <color name="alert">#ff5252</color>
+    <color name="warn">#ffab00</color>
+    <color name="conferma">#43a047</color>
+    <color name="info">#81d4fa</color>
+    <color name="red">#ff4444</color>
+    <color name="text_blu">#26a69a</color>
+    <color name="white_overlay">#bbFFFFFF</color>
+    <color name="black_overlay">#50000000</color>
+    <color name="background">#eeeeee</color>
+    <color name="background_material_light">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimaryDark">#757575</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="grigio_pres">#64e0e0e0</color>
+    <color name="selected">#787986cb</color>
+    <color name="trasparente">#00ffffff</color>
+
+</resources>

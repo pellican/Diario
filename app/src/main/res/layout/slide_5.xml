@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_impost">
+
+        <ImageView
+            android:id="@+id/imclaud"
+            android:layout_width="@dimen/slideclaud"
+            android:layout_height="@dimen/slideclaud"
+            android:src="@drawable/icloud_icon"
+
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/imdrive"
+            android:layout_width="@dimen/slideclaud"
+            android:layout_height="@dimen/slideclaud"
+            android:layout_below="@+id/imclaud"
+            android:src="@drawable/google_drive_icon"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:id="@+id/benvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imdrive"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/slidetext"
+        android:gravity="center"
+        android:text="@string/crea_backup_e_sincronizza_in_google_drive"/>
+
+
+
+
+</RelativeLayout>

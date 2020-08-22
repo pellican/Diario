@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<com.agenda.diario.Util.UserPreference >
+
+</com.agenda.diario.Util.UserPreference>
+    <PreferenceCategory android:title="ACCAUNT" >
+
+        <SwitchPreference
+            android:key="disc"
+            android:title="@string/salva_i_dati"
+            android:summary="@string/connetti"
+            android:defaultValue="false"
+            >
+
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/dati">
+        <Preference
+            android:key="backup"
+            android:title="Backup"
+            android:summary="@string/esegui_backup">
+
+        </Preference>
+        <Preference
+            android:key="ripristino"
+            android:title="@string/ripristino"
+            android:summary="@string/ripristina_backup">
+
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/sicurezza">
+    <SwitchPreference
+        android:key="switchpass"
+        android:title="@string/password"
+        android:summary="@string/impassword"
+        android:defaultValue="false">
+    </SwitchPreference>
+    <Preference
+        android:key="impass"
+        android:title="Password"
+        android:summary="@string/aggpass"
+        android:enabled="false">
+
+    </Preference>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

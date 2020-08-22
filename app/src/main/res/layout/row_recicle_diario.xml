@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:id="@+id/cardview"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_17594"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@drawable/selezione_row"
+
+    >
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/texdatalist"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        />
+    <ImageView
+        android:id="@+id/emotilist"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/ic_emotion"
+        />
+    <TextView
+        android:id="@+id/textdata_"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="38sp"
+        android:id="@+id/textestolist"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/texdatalist"
+        android:layout_alignLeft="@+id/texdatalist"
+        android:layout_alignStart="@+id/texdatalist" />
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/imagelistitem"
+        android:scaleType="centerCrop"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        />
+    <ImageView
+        android:id="@+id/imagecat"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_folder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginStart="180dp"/>
+    <TextView
+        android:id="@+id/textcatlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagecat"
+        android:layout_toEndOf="@+id/imagecat"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+
+        />
+
+</RelativeLayout>
+</RelativeLayout>

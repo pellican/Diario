@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.agenda.diario"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    dexOptions {
+    }
+    compileOptions {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.github.faruktoptas:FancyShowCaseView:1.0.1'
+    implementation 'com.wdullaer:materialdatetimepicker:2.5.0'
+    implementation 'de.keyboardsurfer.android.widget:crouton:1.8.5'
+    implementation 'com.larswerkman:HoloColorPicker:1.5'
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.android.support:mediarouter-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/ombra"
+        android:id="@+id/view">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff9c4"
+            android:id="@+id/relativeLayout2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                card_view:srcCompat="@drawable/ic_drawer"
+                android:id="@+id/imageVdrawer" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVsfondo"
+                card_view:srcCompat="@drawable/ic_crop"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageVdrawer"
+                android:layout_toEndOf="@+id/imageVdrawer" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVcal"
+                card_view:srcCompat="@drawable/calendario"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageVsfondo"
+                android:layout_toEndOf="@+id/imageVsfondo" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVindietro"
+                card_view:srcCompat="@drawable/ic_arrow_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVsocial"
+                card_view:srcCompat="@drawable/ic_share"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageVcancella"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageVcancella"
+                card_view:srcCompat="@drawable/ic_delete"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

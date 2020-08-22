@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aggiungi"
+        android:textSize="20sp"
+        android:id="@+id/textscrivi"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+    <DatePicker
+        android:id="@+id/calendario"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textscrivi">
+
+    </DatePicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/annulla"
+        android:padding="10dp"
+        android:textColor="@color/text_blu"
+        android:id="@+id/textann"
+        android:layout_below="@+id/calendario"
+
+        android:layout_marginRight="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/okagg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="20sp"
+        android:textColor="@color/text_blu"
+        android:padding="10dp"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/calendario"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

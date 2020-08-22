@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applica"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/radiocorre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pag_corrente"
+            android:checked="true"
+            android:layout_marginLeft="10dp"
+            />
+        <RadioButton
+            android:id="@+id/radiotutte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pag_tutte"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ann_sfond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annulla"
+        android:textSize="16sp"
+        android:textColor="#FF009688"
+        android:background="@drawable/clik"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"/>
+    <Button
+        android:id="@+id/ok_sfondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@drawable/clik"
+        android:textSize="16sp"
+        android:textColor="#FF009688"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>

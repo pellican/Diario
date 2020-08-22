@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recicle"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bar2"
+
+        android:background="@drawable/ombra">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/bar_diario_list">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imagedraw"
+            fab:srcCompat="@drawable/ic_menu_grey600_24dp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/texagendiario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:textSize="25sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"/>
+
+        <EditText
+            android:id="@+id/editcerca"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:hint="@string/cerca"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/angoli"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/viewcerca"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/angoli"
+                />
+
+            <ImageView
+                android:id="@+id/imagecerca"
+                fab:srcCompat="@drawable/ic_magnify_grey600_24dp"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginEnd="70dp"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/imagefiltro"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                fab:srcCompat="@drawable/ic_filter_outline_grey600_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                />
+
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/actionbarlist"
+        android:background="@drawable/ombra"
+        android:visibility="invisible"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#cfd8dc">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/annulla"
+                android:id="@+id/annulla_list"
+                android:textSize="20sp"
+                android:textColor="#64b5f6"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        fab:fab_addButtonColorNormal="@color/bar_diario_list"
+        fab:fab_addButtonColorPressed="@color/tolbar_diario_list"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        fab:fab_labelStyle="@style/fab_labels_style"
+        android:visibility="visible"
+        fab:fab_labelsPosition="left"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_diario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/bar_diario"
+            fab:fab_colorPressed="@color/tolbar_diario"
+            fab:fab_size="normal"
+            fab:fab_title="@string/diario"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_add_white_24dp"
+            fab:fab_colorNormal="@color/bar_agenda"
+            fab:fab_colorPressed="@color/tolbar_agenda"
+            fab:fab_size="normal"
+            fab:fab_title="@string/agenda"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/ic_delete_white_24dp"
+        fab:fab_colorNormal="@color/fab_canc"
+        fab:fab_colorPressed="@color/fab_canc_press"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+</RelativeLayout>

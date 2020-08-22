@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.agenda.diario.CustomView.DisegnoView
+        android:id="@+id/pagina"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="matrix"/>
+
+    <RelativeLayout
+        android:id="@+id/bar_note"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/ombra"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/bar_note">
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+       >
+
+        <ImageView
+            android:id="@+id/indietro_note"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/arrow_left" />
+        <ImageView
+            android:id="@+id/pennello"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            app:srcCompat="@drawable/ic_brush_black_48dp"/>
+        <ImageView
+            android:id="@+id/fill"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pennello"
+            android:layout_toEndOf="@+id/pennello"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/paint_bucket"
+            />
+        <ImageView
+            android:id="@+id/gomma"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fill"
+            android:layout_toEndOf="@+id/fill"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/ic_eraser_black_48dp"
+            />
+        <ImageView
+            android:id="@+id/undo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/gomma"
+            android:layout_toEndOf="@+id/gomma"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/ic_undo_black_48dp"
+            />
+        <ImageView
+            android:id="@+id/redo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/undo"
+            android:layout_toEndOf="@+id/undo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/ic_redo_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/lente"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/redo"
+            android:layout_toEndOf="@+id/redo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/magnify"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lente"
+            android:layout_toEndOf="@+id/lente"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/delete"/>
+
+    </RelativeLayout>
+</HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

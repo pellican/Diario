@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "230872026496",
+    "firebase_url": "https://diario-agenda.firebaseio.com",
+    "project_id": "diario-agenda",
+    "storage_bucket": "diario-agenda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230872026496:android:dfbc875d61470933",
+        "android_client_info": {
+          "package_name": "com.agenda.diario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230872026496-4ce6n4ivcuolla8fbq0lf71kv4et2b3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agenda.diario",
+            "certificate_hash": "55c081683006488199499b939f10c2cbfdb0d296"
+          }
+        },
+        {
+          "client_id": "230872026496-i1tlg1jcj12vuq93av58oofe5nou60ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCBcWVOBJl76_GcqOq-GN99_uzF4buZiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-8361211670031398~2956205263"
+    }
+  ],
+  "configuration_version": "1"
+}

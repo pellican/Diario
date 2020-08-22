@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agenda.diario">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBase">
+        <activity
+            android:name=".SlideIntro.SlideIntro"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Agenda.MyReceiver"
+            android:exported="false" />
+
+        <service
+            android:name=".GoogleDrive.SincGoogleDrive"
+            android:exported="false">
+        </service>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".Diario.Impostazioni.ImpostaActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Diario.FotoActivity"
+            android:label="@string/title_activity_foto" />
+        <activity
+            android:name=".Diario.Testo.TestoActivity"
+            android:theme="@style/AppTheme"
+           />
+        <activity
+            android:name=".Agenda.Dialog_agenda"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name=".Impost.Activity_password"
+            android:theme="@style/Dialog"
+            />
+        <activity
+            android:name=".Diario.Banner.Banner"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name=".Diario.PlayerActivity"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name=".Diario.RecordActivity"
+            android:theme="@style/Dialog" />
+        <activity
+            android:name=".Impost.Impost_Activity"
+            android:theme="@style/AppTheme"
+           />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIJy4NGrrOSJ8cqL4PrG0U4EVYCCsHigO6zs_SEw" />
+    </application>
+
+</manifest>
